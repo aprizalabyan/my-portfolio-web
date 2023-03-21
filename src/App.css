@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+  --primaryColor : #F3F3F3;
+  --secondaryColor : #262726;
+  --thirdColor : #A8A8A8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: var(--primaryColor) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body a {
+  text-decoration: none;
+  color: var(--secondaryColor);
+}
+
+.btnPrim{
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
+  padding: 12px 20px;
+  border: 1px solid;
+  border-color: var(--secondaryColor);
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+}
+
+.btnPrim:hover{
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: var(--secondaryColor);
+}
+
+.btnSecon{
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.navbar{
+  padding: 10px 182px;
+  background-color: var(--primaryColor) !important;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav{
+  gap: 30px;
+}
+
+.navbar-brand{
+  font-size: 24px !important;
+  font-weight: 500;
+  color: var(--secondaryColor) !important;
+}
+
+.nav-link{
+  font-size: 14px !important;
+  color: var(--secondaryColor) !important;
+  position: relative;
+}
+
+.nav-link::before{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--secondaryColor);
+  border-radius: 10px;
+  bottom: 20%;
+  position: absolute;
+  transition: all .3s ease-in-out;
+}
+
+.nav-link:hover::before{
+  content: '';
+  width: 50%;
+  height: 2px;
+  background-color: var(--secondaryColor);
+  border-radius: 10px;
+  bottom: 20%;
+  position: absolute;
+  transition: all .3s ease-in-out;
+}
+
+.nav-link.active::before{
+  content: '';
+  width: 50%;
+  height: 2px;
+  background-color: var(--secondaryColor);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20%;
+}
+
+.heroSection{
+  padding: 150px 0 100px 0;
+  gap: 24px;
+}
+
+.heroName{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.heroDev{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.line{
+  /* border-bottom: 2px solid var(--secondaryColor); */
+  background-color: #262726;
+  height: 2px;
+  /* position: relative; */
+}
+
+.socialMedia{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+#skills, #portfolio, #contact{
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.imgProfil{
+  background-size: cover;
+  box-shadow: inset 0 0 0 12px rgb(255 255 255 / 30%);
+  justify-self: center;
+  animation: upDown 8s ease-in-out infinite 1s;
+}
+
+@keyframes upDown {
+  0% {
+    border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  }
+}
+
+.itemSkills{
+  padding: 80px 0px 40px 0px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.itemSkills img{
+  width: 50%;
+}
+
+.itemPortfolio{
+  padding: 40px 0px 20px 0px;
+  justify-content: center;
+  display: flex;
+}
+
+.form-control{
+  background: none !important; 
+  border: 1px solid !important;
+  border-color: var(--thirdColor) !important;
+  border-radius: 12px !important;
+  padding: 14px !important;
+}
+
+.footerSection{
+  padding: 40px 0px 0px 0px;
+  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* MEDIA SCREEN ---------------------------------------------------------- */
+
+@media screen and (max-width : 768px) {
+  .caption{
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .imgProfil{
+    width: 300px !important;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .imgProfil{
+    width: 200px !important;
+    padding-bottom: 40px;
+  }
+  .heroName{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .heroDev{
+    font-size: 20px;
+    font-weight: 400;
   }
 }
