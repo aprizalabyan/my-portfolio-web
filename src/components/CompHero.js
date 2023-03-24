@@ -3,13 +3,13 @@ import profil from '../assets/profil-full.jpg'
 
 const CompHero = () => {
   return (
-    <div className="col-10 container heroSection" id="home">
+    <section className="col-10 container heroSection" id="home">
       <div className="row align-items-center">
         <div className="col-1 socialMedia">
-            <a href="#ig"><i className="bi bi-instagram"></i></a>
-            <a href="#ig"><i className="bi bi-github"></i></a>
-            <a href="#ig"><i className="bi bi-facebook"></i></a>
-            <a href="#ig"><i className="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/aprzla_/" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a>
+            <a href="https://github.com/aprizalabyan" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
+            <a href="https://www.facebook.com/aprzla" target="_blank" rel="noreferrer"><i className="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-aprizal-abyan-598012268/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
         </div>
         <div className="col-11 d-flex flex-nowrap caption">
           <div className="col-8 order-md-1 order-2">
@@ -29,7 +29,7 @@ const CompHero = () => {
         </div>
       </div>
       
-    </div>
+    </section>
   )
 }
 

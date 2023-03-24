@@ -1,14 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Link } from 'react-scroll'
 
 const CompNavbar = () => {
-  const [activeLink, setActiveLink] = useState('home')
-
-  const onUpdateActiveLink = (value) =>{
-    setActiveLink(value)
-  }
-
   return (
-    <nav className="navbar navbar-expand-lg fixed-top">
+    <nav className="navbar navbar-expand-md fixed-top">
         <div className="container col-10">
             <a className="navbar-brand" href="#home">Aprzl</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItem" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,10 +11,10 @@ const CompNavbar = () => {
             </button>
             <div className="collapse navbar-collapse justify-content-end" id="navbarItem">
               <div className="navbar-nav">
-                  <a className={activeLink === 'home' ? 'nav-link active' : 'nav-link'} href="#home" onClick={() => onUpdateActiveLink('home')}>Home</a>
-                  <a className={activeLink === 'skills' ? 'nav-link active' : 'nav-link'} href="#skills" onClick={() => onUpdateActiveLink('skills')}>Skills</a>
-                  <a className={activeLink === 'portfolio' ? 'nav-link active' : 'nav-link'} href="#portfolio" onClick={() => onUpdateActiveLink('portfolio')}>Portfolio</a>
-                  <a className={activeLink === 'contact' ? 'nav-link active' : 'nav-link'} href="#contact" onClick={() => onUpdateActiveLink('contact')}>Contact</a>
+                <Link activeClass="active" smooth={true} spy={true} offset={-100} to="home" className="nav-link" href="#home">Home</Link>
+                <Link activeClass="active" smooth={true} spy={true} offset={-50} to="skills" className="nav-link" href="#skills">Skills</Link>
+                <Link activeClass="active" smooth={true} spy={true} offset={-50} to="portfolio" className="nav-link" href="#portfolio">Portfolio</Link>
+                <Link activeClass="active" smooth={true} spy={true} offset={-50} to="contact" className="nav-link" href="#contact">Contact</Link>
               </div>
             </div>
         </div>

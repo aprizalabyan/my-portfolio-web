@@ -5,17 +5,16 @@ import port1 from './../assets/port-1.png'
 const CompPortfolio = () => {
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
           items: 5
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
+          breakpoint: { max: 3000, min: 768 },
           items: 2,
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2
+          breakpoint: { max: 768, min: 464 },
+          items: 1
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
@@ -24,35 +23,33 @@ const CompPortfolio = () => {
     };
 
     return (
-        <div className="col-10 container text-center">
-            <div id="portfolio">
-                <h2>Portfolio</h2>
-                <p>My Recent Projects</p>
-                <Carousel responsive={responsive} infinite={true} itemClass="itemPortfolio">
-                    <div class="card col-8">
-                        <img src={port1} class="card-img-top" alt="img"/>
-                        <div class="card-body">
-                            <h5 class="card-title">Web Design</h5>
-                            <p class="card-text">Lombok Travel</p>
-                        </div>
+        <section id="portfolio" className="col-10 container text-center">
+            <h2>Portfolio</h2>
+            <p>My Recent Projects</p>
+            <Carousel responsive={responsive} infinite={true} itemClass="itemPortfolio">
+                <div className="card col-8">
+                    <img src={port1} className="card-img-top" alt="img"/>
+                    <div className="card-body">
+                        <h5 className="card-title">Web Design</h5>
+                        <p className="card-text">Lombok Travel</p>
                     </div>
-                    <div class="card col-8">
-                        <img src={port1} class="card-img-top" alt="img"/>
-                        <div class="card-body">
-                            <h5 class="card-title">Web Design</h5>
-                            <p class="card-text">Lombok Travel</p>
-                        </div>
+                </div>
+                <div className="card col-8">
+                    <img src={port1} className="card-img-top" alt="img"/>
+                    <div className="card-body">
+                        <h5 className="card-title">Web Design</h5>
+                        <p className="card-text">Lombok Travel</p>
                     </div>
-                    <div class="card col-8">
-                        <img src={port1} class="card-img-top" alt="img"/>
-                        <div class="card-body">
-                            <h5 class="card-title">Web Design</h5>
-                            <p class="card-text">Lombok Travel</p>
-                        </div>
+                </div>
+                <div className="card col-8">
+                    <img src={port1} className="card-img-top" alt="img"/>
+                    <div className="card-body">
+                        <h5 className="card-title">Web Design</h5>
+                        <p className="card-text">Lombok Travel</p>
                     </div>
-                </Carousel>
-            </div>
-        </div>
+                </div>
+            </Carousel>
+        </section>
     )
 }
 
