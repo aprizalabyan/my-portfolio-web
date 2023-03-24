@@ -18,10 +18,9 @@ const CompContact = () => {
         setError('Please enter valid email address')
       }
       else {
-      console.log('email sent')
       setError('')
       
-      // emailjs.sendForm('service_56urbvu', 'template_h91fepk', form.current, '-tg0IMy127Lq-HdBv')
+      emailjs.sendForm('service_56urbvu', 'template_h91fepk', form.current, '-tg0IMy127Lq-HdBv')
       e.target.reset()
       alert('Email sent succesfull')
       }

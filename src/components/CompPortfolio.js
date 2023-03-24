@@ -28,24 +28,12 @@ const CompPortfolio = () => {
             <p>My Recent Projects</p>
             <Carousel responsive={responsive} infinite={true} itemClass="itemPortfolio">
                 <div className="card col-8">
-                    <img src={port1} className="card-img-top" alt="img"/>
+                    <img src={port1} className="card-img-top" alt="img"></img>
                     <div className="card-body">
                         <h5 className="card-title">Web Design</h5>
-                        <p className="card-text">Lombok Travel</p>
-                    </div>
-                </div>
-                <div className="card col-8">
-                    <img src={port1} className="card-img-top" alt="img"/>
-                    <div className="card-body">
-                        <h5 className="card-title">Web Design</h5>
-                        <p className="card-text">Lombok Travel</p>
-                    </div>
-                </div>
-                <div className="card col-8">
-                    <img src={port1} className="card-img-top" alt="img"/>
-                    <div className="card-body">
-                        <h5 className="card-title">Web Design</h5>
-                        <p className="card-text">Lombok Travel</p>
+                        <a href="https://aprizalabyan.github.io/lombok-trv/" target="_blank" rel="noreferrer">
+                            <p className="card-text">Lombok Travel <i className="bi bi-arrow-right"></i></p>
+                        </a>
                     </div>
                 </div>
             </Carousel>

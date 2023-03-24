@@ -202,6 +202,11 @@ body a {
   width: 50%;
 }
 
+#portfolio .btnThird{
+  padding: 6px 12px;
+  margin-top: 8px;
+}
+
 .itemPortfolio{
   padding: 40px 0px 20px 0px;
   justify-content: center;
