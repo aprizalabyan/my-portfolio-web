@@ -20,7 +20,7 @@ const CompContact = () => {
       else {
       setError('')
       
-      emailjs.sendForm('service_56urbvu', 'template_h91fepk', form.current, '-tg0IMy127Lq-HdBv')
+      emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       e.target.reset()
       alert('Email sent succesfull')
       }
