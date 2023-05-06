@@ -1,9 +1,9 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel'
 import circle70 from './../assets/circle-70.png'
+import circle75 from './../assets/circle-75.png'
 import circle80 from './../assets/circle-80.png'
 import circle85 from './../assets/circle-85.png'
-import circle90 from './../assets/circle-90.png'
 
 const CompSkills = () => {
     const responsive = {
@@ -31,24 +31,39 @@ const CompSkills = () => {
             <p>My Programing Level</p>
             <Carousel responsive={responsive} infinite={true}>
                 <div className="itemSkills">
-                    <img src={circle80} alt="img" className="mb-4"/>
+                    <img src={circle75} alt="img" className="mb-4"/>
                     <h4>React Js</h4>
+                    <h6 className="fst-italic">(Framework)</h6>
+                </div>
+                <div className="itemSkills">
+                    <img src={circle80} alt="img" className="mb-4"/>
+                    <h4>Bootstrap</h4>
+                    <h6 className="fst-italic">(Framework)</h6>
                 </div>
                 <div className="itemSkills">
                     <img src={circle85} alt="img" className="mb-4"/>
                     <h4>CSS</h4>
+                    <h6 className="fst-italic">(Programing Language)</h6>
                 </div>
                 <div className="itemSkills">
                     <img src={circle85} alt="img" className="mb-4"/>
-                    <h4>Bootstrap</h4>
+                    <h4>HTML</h4>
+                    <h6 className="fst-italic">(Programing Language)</h6>
+                </div>
+                <div className="itemSkills">
+                    <img src={circle75} alt="img" className="mb-4"/>
+                    <h4>Javascript</h4>
+                    <h6 className="fst-italic">(Programing Language)</h6>
                 </div>
                 <div className="itemSkills">
                     <img src={circle70} alt="img" className="mb-4"/>
                     <h4>PHP</h4>
+                    <h6 className="fst-italic">(Programing Language)</h6>
                 </div>
                 <div className="itemSkills">
-                    <img src={circle90} alt="img" className="mb-4"/>
-                    <h4>HTML</h4>
+                    <img src={circle70} alt="img" className="mb-4"/>
+                    <h4>MySQL</h4>
+                    <h6 className="fst-italic">(Database)</h6>
                 </div>
             </Carousel>
         </section>
