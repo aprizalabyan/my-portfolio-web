@@ -3,8 +3,9 @@ import emailjs from '@emailjs/browser'
 
 const CompContact = () => {
   const text = "Hello%20Abyan, "
+  // eslint-disable-next-line
   const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
-
+  
   const form = useRef()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -41,7 +42,7 @@ const CompContact = () => {
                   <div className="card-body">
                     <i className="bi bi-house" style={{fontSize: "24px"}}></i>
                     <h6 className="card-title">Address</h6>
-                    <p className="card-text" style={{fontSize: "14px"}}>Selong, Lombok Timur, Nusa Tenggara Barat - Indonesia</p>
+                    <p className="card-text text">Selong, Lombok Timur, Nusa Tenggara Barat - Indonesia</p>
                     <a href="https://goo.gl/maps/GPvc2336HTksLyjy5">Find Me <i className="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
@@ -49,12 +50,12 @@ const CompContact = () => {
                   <div className="card-body">
                     <i className="bi bi-whatsapp" style={{fontSize: "24px"}}></i>
                     <h6 className="card-title">Whatsapp</h6>
-                    <p className="card-text" style={{fontSize: "14px"}}>+62 87805429349</p>
+                    <p className="card-text text">+62 87805429349</p>
                     <a href={"https://wa.me/+6287805429349?text="+text}>Write Me <i className="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
-              <form className="col-12 col-md-6 card py-3" ref={form} onSubmit={sendEmail}>
+              <form className="col-12 col-md-6 card p-4" ref={form} onSubmit={sendEmail}>
                 <label className="mb-2 d-flex justify-content-start ps-1">Send an Email :</label>
                 <div className="mb-4">
                     <input type="text" className="form-control" placeholder="Insert your name" name="nameForm" onChange={(e) => setName(e.target.value)} />

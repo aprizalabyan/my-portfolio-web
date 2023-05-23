@@ -19,7 +19,7 @@ const CompHero = () => {
               <div className="heroDev">Front-End Developer</div>
             </div>
             <div className="mb-5 col-md-9 col-12">
-              <span style={{fontSize: "14px"}}>I am a programmer interested in website development. I also like graphic design and photography. And i am very passionate to my work..</span>
+              <span className="text">I am a programmer interested in website development. I also like graphic design and photography. And i am very passionate to my work..</span>
             </div>
             <a href="#contact"><button className="btnPrim mt-2">Let's Connect</button></a>
           </div>

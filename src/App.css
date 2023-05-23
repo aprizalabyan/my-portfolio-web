@@ -161,6 +161,10 @@ body a {
   animation: borderRadius 8s ease-in-out infinite 1s;
 }
 
+.text{
+  font-size: 14px;
+}
+
 @keyframes borderRadius {
   0% {
     border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
@@ -232,6 +236,10 @@ form label{
   font-size: 16px;
 }
 
+input::placeholder, textarea::placeholder{
+  font-size: 14px;
+}
+
 .contact a{
   font-size: 16px;
 }
@@ -242,7 +250,7 @@ form label{
 }
 
 .footerSection{
-  padding: 40px 0px 0px 0px;
+  padding: 40px 0px 40px 0px;
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -283,7 +291,7 @@ form label{
   .btnSecon{
     padding: 8px 16px;
   }
-  .btnThird{
+  .btnThird, .btnThird:hover{
     padding: 8px 16px;
     font-size: 12px;
   }
@@ -304,5 +312,11 @@ form label{
   }
   .contact a{
     font-size: 14px;
+  }
+  h5{
+    font-size: 16px !important;
+  }
+  h6{
+    font-size: 14px !important;
   }
 }
