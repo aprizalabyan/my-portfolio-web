@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel'
 import port1 from './../assets/port-1.png'
 import port2 from './../assets/port-2.png'
 import port3 from './../assets/port-3.png'
+import port4 from './../assets/port-4.jpg'
 
 const CompPortfolio = () => {
     const responsive = {
@@ -30,12 +31,12 @@ const CompPortfolio = () => {
             <p>My Recent Projects</p>
             <Carousel responsive={responsive} infinite={true} itemClass="itemPortfolio">
                 <div className="card col-8">
-                    <img src={port1} className="card-img-top" alt="img"></img>
+                    <img src={port4} className="card-img-top" alt="img"></img>
                     <div className="card-body">
                         <h5 className="card-title">Web Design</h5>
-                        <h6 className="card-title">Lombok Travel</h6>
-                        <a href="https://aprizalabyan.github.io/lombok-trv/" target="_blank" rel="noreferrer">
-                            <p className="card-text fst-italic">Preview <i className="bi bi-arrow-right"></i></p>
+                        <h6 className="card-title">Coolstore - Online Store</h6>
+                        <a href="https://aprizalabyan.github.io/coolstore/" target="_blank" rel="noreferrer">
+                            <p className="card-text fst-italic text">Preview <i className="bi bi-arrow-right"></i></p>
                         </a>
                     </div>
                 </div>
@@ -55,6 +56,16 @@ const CompPortfolio = () => {
                         <h5 className="card-title">Web App</h5>
                         <h6 className="card-title">Spreadsheet API</h6>
                         <a href="https://aprizalabyan.github.io/contact-list/" target="_blank" rel="noreferrer">
+                            <p className="card-text fst-italic">Preview <i className="bi bi-arrow-right"></i></p>
+                        </a>
+                    </div>
+                </div>
+                <div className="card col-8">
+                    <img src={port1} className="card-img-top" alt="img"></img>
+                    <div className="card-body">
+                        <h5 className="card-title">Web Design</h5>
+                        <h6 className="card-title">Lombok Travel</h6>
+                        <a href="https://aprizalabyan.github.io/lombok-trv/" target="_blank" rel="noreferrer">
                             <p className="card-text fst-italic">Preview <i className="bi bi-arrow-right"></i></p>
                         </a>
                     </div>
