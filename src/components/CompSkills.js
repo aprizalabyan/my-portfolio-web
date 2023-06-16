@@ -41,6 +41,11 @@ const CompSkills = () => {
                     <h6 className="fst-italic">(Framework)</h6>
                 </div>
                 <div className="itemSkills">
+                    <img src={circle70} alt="img" className="mb-4"/>
+                    <h4>Vue Js</h4>
+                    <h6 className="fst-italic">(Framework)</h6>
+                </div>
+                <div className="itemSkills">
                     <img src={circle85} alt="img" className="mb-4"/>
                     <h4>CSS</h4>
                     <h6 className="fst-italic">(Programing Language)</h6>
